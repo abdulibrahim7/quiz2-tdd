@@ -1,0 +1,1 @@
+Month represents 12 calendar months.
