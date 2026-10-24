@@ -1,6 +1,6 @@
 public class Calculator {
     public int sum(int x, int y) {
-        throw new UnsupportedOperationException("Not implemented");
+        return x + y;
     }
 
     public int subtract(int x, int y) {
