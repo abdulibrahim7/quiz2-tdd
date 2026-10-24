@@ -52,4 +52,28 @@ class CalculatorTest {
         assertThrows(ArithmeticException.class,
                 () -> calculator.divide(5, 0));
     }
+    @Test
+    void isEvenReturnsTrueForEvenNumber() {
+        assertTrue(calculator.isEven(4));
+    }
+
+    @Test
+    void isEvenReturnsFalseForOddNumber() {
+        assertFalse(calculator.isEven(5));
+    }
+
+    @Test
+    void isEvenTreatsZeroAsEven() {
+        assertTrue(calculator.isEven(0));
+    }
+
+    @Test
+    void isEvenHandlesNegativeEvenNumber() {
+        assertTrue(calculator.isEven(-4));
+    }
+
+    @Test
+    void isEvenHandlesNegativeOddNumber() {
+        assertFalse(calculator.isEven(-5));
+    }
 }
