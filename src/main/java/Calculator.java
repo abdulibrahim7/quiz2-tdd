@@ -13,7 +13,7 @@ public class Calculator {
     }
 
     public int divide(int x, int y) {
-        throw new UnsupportedOperationException("Not implemented");
+        return x / y;
     }
 
     public boolean isEven(int value) {
