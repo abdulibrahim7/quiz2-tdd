@@ -1,5 +1,5 @@
 public class DateChecker {
     public boolean has31Days(Month month) {
-        return true;
+        return month == Month.JANUARY;
     }
 }
