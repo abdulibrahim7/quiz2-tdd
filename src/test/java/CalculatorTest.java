@@ -18,4 +18,18 @@ class CalculatorTest {
     void sumHandlesZero() {
         assertEquals(7, calculator.sum(0, 7));
     }
+    @Test
+    void multiplyHandlesPositiveNumbers() {
+        assertEquals(12, calculator.multiply(3, 4));
+    }
+
+    @Test
+    void multiplyHandlesZero() {
+        assertEquals(0, calculator.multiply(5, 0));
+    }
+
+    @Test
+    void multiplyHandlesNegativeNumbers() {
+        assertEquals(-12, calculator.multiply(-3, 4));
+    }
 }
