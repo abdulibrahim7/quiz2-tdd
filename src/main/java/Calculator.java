@@ -3,7 +3,7 @@ public class Calculator {
         return x + y;
     }
 
-    public int subtract(int x, int y) {
+    public int subtract(return x - y;) {
         throw new UnsupportedOperationException("Not implemented");
     }
 
