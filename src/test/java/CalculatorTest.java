@@ -32,4 +32,24 @@ class CalculatorTest {
     void multiplyHandlesNegativeNumbers() {
         assertEquals(-12, calculator.multiply(-3, 4));
     }
+    @Test
+    void divideReturnsQuotient() {
+        assertEquals(4, calculator.divide(12, 3));
+    }
+
+    @Test
+    void divideUsesIntegerDivision() {
+        assertEquals(3, calculator.divide(7, 2));
+    }
+
+    @Test
+    void divideHandlesNegativeNumbers() {
+        assertEquals(-3, calculator.divide(-7, 2));
+    }
+
+    @Test
+    void divideRejectsZeroDivisor() {
+        assertThrows(ArithmeticException.class,
+                () -> calculator.divide(5, 0));
+    }
 }
