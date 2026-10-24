@@ -3,13 +3,14 @@ public class DateChecker {
         if (month == null) {
             throw new IllegalArgumentException("Month cannot be null");
         }
-        return month == Month.JANUARY
 
-                || month == Month.MARCH
-                || month == Month.MAY
-                || month == Month.JULY
-                || month == Month.AUGUST
-                || month == Month.OCTOBER
-                || month == Month.DECEMBER;
+        return switch (month) {
+            case JANUARY, MARCH, MAY, JULY,
+                 AUGUST, OCTOBER, DECEMBER -> true;
+
+            case APRIL, JUNE, SEPTEMBER, NOVEMBER -> false;
+
+            case FEBRUARY -> false;
+        };
     }
 }
