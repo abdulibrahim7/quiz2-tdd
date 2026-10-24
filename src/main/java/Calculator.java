@@ -17,6 +17,6 @@ public class Calculator {
     }
 
     public boolean isEven(int value) {
-        throw new UnsupportedOperationException("Not implemented");
+        return value % 2 == 0;
     }
 }
