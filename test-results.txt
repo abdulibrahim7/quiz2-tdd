@@ -1,0 +1,52 @@
+/bin/sh /Applications/IntelliJ IDEA.app/Contents/plugins/maven-plugin/lib/maven3/bin/mvn -Didea.version=2026.2.3 -Dmaven.ext.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven-plugin/lib/intellij.maven.rt/maven-event-listener.jar -Djansi.passthrough=true -Dstyle.color=always -Dmaven.repo.local=/Users/abdullahibrahim/.m2/repository -B -Dstyle.color=never clean test -f pom.xml
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -----------------------< org.example:quiz2-tdd >------------------------
+[INFO] Building quiz2-tdd 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- clean:3.2.0:clean (default-clean) @ quiz2-tdd ---
+[INFO] Deleting /Users/abdullahibrahim/Desktop/cs3560/quiz2-tdd/target
+[INFO]
+[INFO] --- resources:3.4.0:resources (default-resources) @ quiz2-tdd ---
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO]
+[INFO] --- compiler:3.15.0:compile (default-compile) @ quiz2-tdd ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug target 17] to target/classes
+[WARNING] location of system modules is not set in conjunction with -source 17
+  not setting the location of system modules may lead to class files that cannot run on JDK 17
+    --release 17 is recommended instead of -source 17 -target 17 because it sets the location of system modules automatically
+[INFO]
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ quiz2-tdd ---
+[INFO] skip non existing resourceDirectory /Users/abdullahibrahim/Desktop/cs3560/quiz2-tdd/src/test/resources
+[INFO]
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ quiz2-tdd ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug target 17] to target/test-classes
+[WARNING] location of system modules is not set in conjunction with -source 17
+  not setting the location of system modules may lead to class files that cannot run on JDK 17
+    --release 17 is recommended instead of -source 17 -target 17 because it sets the location of system modules automatically
+[INFO]
+[INFO] --- surefire:3.5.2:test (default-test) @ quiz2-tdd ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running CalculatorTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s -- in CalculatorTest
+[INFO] Running DateCheckerTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s -- in DateCheckerTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.761 s
+[INFO] Finished at: 2026-10-23T22:22:06-07:00
+[INFO] ------------------------------------------------------------------------
