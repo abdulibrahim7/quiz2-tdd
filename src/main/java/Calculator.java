@@ -18,4 +18,13 @@ public class Calculator {
     public boolean isEven(int value) {
         throw new UnsupportedOperationException("Not implemented");
     }
+    @Test
+    void subtractReturnsPositiveDifference() {
+        assertEquals(5, calculator.subtract(8, 3));
+    }
+
+    @Test
+    void subtractReturnsNegativeDifference() {
+        assertEquals(-5, calculator.subtract(3, 8));
+    }
 }
