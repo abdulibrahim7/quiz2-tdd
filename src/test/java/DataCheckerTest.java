@@ -11,4 +11,18 @@ class DateCheckerTest {
         assertTrue(checker.has31Days(Month.JANUARY),
                 "January should have 31 days");
     }
+    @ParameterizedTest
+    @EnumSource(value = Month.class, names = {
+            "APRIL", "JUNE", "SEPTEMBER", "NOVEMBER"
+    })
+    void thirtyDayMonthsReturnFalse(Month month) {
+        assertFalse(checker.has31Days(month),
+                month + " should not have 31 days");
+    }
+
+    @Test
+    void februaryReturnsFalse() {
+        assertFalse(checker.has31Days(Month.FEBRUARY),
+                "February never has 31 days");
+    }
 }
